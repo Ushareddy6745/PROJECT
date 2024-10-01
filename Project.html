@@ -17,9 +17,7 @@ body {
     height:100px;
     background-color: #567086;
     padding:0px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
     align-items: center;
     justify-content: space-evenly;
 
@@ -37,7 +35,7 @@ body {
   color: #fff;
   margin-bottom: 30px;
 }
-.nav-link {
+ .nav-link {
   color: #fff;
   height: 100%;
   display: flex;
@@ -45,16 +43,15 @@ body {
   justify-content: center;
   flex-direction: column;
   font-size: 90%;
-}
+ }
 .nav-link i {
   margin-bottom: 10px;
   margin-right: 0;
   font-size: 1.7rem;
 }
- .dropdown-menu {
+ .dropdown-menu{
   font-size: 90%;
-  color: #fff;
-  background-color: #567086;
+  background-color:#567086;
   border-radius: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -69,13 +66,6 @@ body {
 }
 .bgcol i{
     color: #fff;  
-}
-.dropdown-toggle::after {
-  display: none;
-}
-.dropdown-menu {
-  margin-top: 0;
-  border: 0;
 }
 .dash{
   padding-top: 33px;
@@ -163,10 +153,6 @@ body {
     text-align: center;
   
 }
-
-  table{
-    border-collapse: collapse;
-  }
   .text{
     display: flex;
     justify-content: center;
@@ -202,7 +188,7 @@ body {
     grid-area: grid2;
     background-color:#425769;
     width: 100%;
-    height:55vh;
+    /* height:55vh; */
     padding-top:10px;
 
 }.grid3{
@@ -226,6 +212,9 @@ body {
     padding: 3%;
     width: 100%;
 }
+ .grid3 input{
+        width: 100%;
+      }
  .btn{
     background-color: #f5a623;
     color: #fff;
@@ -241,23 +230,22 @@ body {
     color: #fff;
     border-radius: 0% ;
     font-weight: bold;
-    margin-top: 11%;
+    margin-top: 7%;
     border: none;
 }
 input{
     height:30%;
     background-color: #4e657a;
     border:none;
-    size: 200;
 }
 .div button{
-    margin-top:18%;
+    margin-top:11%;
     background-color: #f5a623;
     color: #fff;
     border-radius: 0%;
     font-weight: bold;
     border: none;
-    padding: 5%;
+    padding:3%;
     width: 100%;
 }
 #text{
@@ -311,10 +299,13 @@ table{
         width: auto;
         row-gap: 10px;
     }
+    .form1,.form2{
+      width: 100%;
+    }
     .form2{
-    margin-top:50px;
-}
-    .container2{
+        margin-top:50px;
+      }
+    .container1{
       display:flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -322,16 +313,31 @@ table{
    
     .grid2{
         width: 100%;
-        height:100vh;
+    }
+    .grid2 img{
+      width: 100%;
     }
     .grid3{
+      width: 100%;
       height: 100vh;
     }
- 
-    }
     .grid3 input{
-        width: 100%;
+      width: 100%;
     }
+    .div button{
+    margin-top:12%;
+    background-color: #f5a623;
+    color: #fff;
+    border-radius: 0%;
+    font-weight: bold;
+    border: none;
+    padding:2%;
+    width: 100%;
+    }
+    .btn2{
+      margin-top:4%;
+    }
+  }
     @media (min-width:991px)and(max-width:1170px){
         .grid2{
             width:50%;
@@ -714,18 +720,18 @@ table{
                    <div class="flex">
                     <div class="form1">
                        <label for="name">Account Name</label><br>
-                       <input type="text" id="name"><br> 
+                       <input type="text" id="name">
                       <label for="password">Password</label><br>
-                        <input type="password" id="password"><br>
+                        <input type="password" id="password">
                         <label for="number">Phone</label><br>
-                        <input type="number" id="number"><br>
+                        <input type="number" id="number">
                       </div>
                       <div class="form2">
                         <label for="email">Account Email</label><br>
-                        <input type="email" id="email"><br>
+                        <input type="email" id="email">
                         <label for="password1">Re-enter Password</label><br>
-                        <input type="password" id="password1"><br>
-                        <button class="btn2">UPDATE YOUR PROFILE</button>
+                        <input type="password" id="password1">
+                        <input type="button" class="btn2" value="UPDATE YOUR PROFILE">
                       </div>
                     </div>
                     <div class="div">
